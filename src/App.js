@@ -1,0 +1,32 @@
+import logo from './logo.svg';
+import './App.css';
+import ButtonAppBar from './modules/header/header'
+//import Body from './modules/body/body'
+import Layout from './modules/Layout';
+import Header from './modules/Layout/Header';
+import Body from './modules/Layout/Body';
+import Content from './modules/Content';
+import Page from './modules/Page'
+import { Switch, Route } from 'react-router-dom';
+import AdminPage from './modules/admin';
+function App() {
+  return (
+    <div className="App">
+      <Layout>
+        <Header/>
+        <Body>
+          <Switch>
+          <Route exact path='/' component={Content}/>
+          <Route exact path='/content' component={Page}/>
+          <Route path='/content/:number' component={Page}/>
+          <Route path='/admin' component={AdminPage}/>
+          {/* <Content/> */}
+          {/* <Page /> */}
+          </Switch>
+        </Body>
+      </Layout>
+    </div>
+  );
+}
+
+export default App;
