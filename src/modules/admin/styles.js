@@ -31,6 +31,11 @@ const styles = {
         fontWeight: 'bold',
         textTransform: 'uppercase',
         marginLeft: '50px',
+    },
+    image:{
+        maxWidth: '60%',
+        marginTop: '10px',
+
     }
 };
 

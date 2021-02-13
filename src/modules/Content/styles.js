@@ -17,7 +17,7 @@ const styles = {
         overflow: 'hidden',
     },
     image:{
-        
+        width:'100%',
     },
     text:{
         fontSize: '23px',
