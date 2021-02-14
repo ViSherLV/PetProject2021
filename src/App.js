@@ -17,11 +17,10 @@ function App() {
         <Body>
           <Switch>
           <Route exact path='/' component={Content}/>
-          <Route exact path='/content' component={Page}/>
+          <Route exact path='/content' component={Content}/>
+          <Route path='/content/tags/:category' component={Content}/>
           <Route path='/content/:number' component={Page}/>
           <Route path='/admin' component={AdminPage}/>
-          {/* <Content/> */}
-          {/* <Page /> */}
           </Switch>
         </Body>
       </Layout>

@@ -5,7 +5,7 @@ const styles = {
     postPageHeader:{
     },
     image:{
-        width: '100%'
+        width: '40%'
     },
     postPageMainText:{
         fontSize: '30px',

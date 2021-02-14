@@ -48,6 +48,7 @@ const styles = {
         height: '100px',
         paddingLeft: '10px',
         paddingRight: '10px',
+        overflow: 'hidden'
     }
 }
 

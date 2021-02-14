@@ -36,7 +36,12 @@ const styles = {
         maxWidth: '60%',
         marginTop: '10px',
 
-    }
+    },
+    formControl: {
+        width: '40%',
+        marginLeft: '-43%',
+    },
+    
 };
 
 export {styles}

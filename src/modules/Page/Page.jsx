@@ -28,8 +28,8 @@ const Page = ({location}) =>{
     return(
         <div style={styles.postPageWrapper}>
             <h1 style={styles.postPageHeader}>{currentPost?.header}</h1>
-            <div style={styles.image}>
-            <img src={currentPost?.image} alt="image"/>
+            <div>
+            <img style={styles.image} src={currentPost?.image} alt="image"/>
             </div>
             <p style={styles.postPageMainText}>{currentPost?.text}</p>
 
