@@ -1,5 +1,26 @@
-import { CHOOSEN_USERS, FETCH_USERS, HIDE_LOADER, SHOW_LOADER, FETCH_POSTS } from './types';
+import {
+    CHOOSEN_USERS,
+    FETCH_USERS,
+    HIDE_LOADER,
+    SHOW_LOADER,
+    FETCH_POSTS,
+    OPEN_MODAL,
+    CLOSE_MODAL
+} from './types';
 import axios from "axios";
+
+export function openModal() {
+    console.log(`in OpenModal Action`)
+    return {
+        type: OPEN_MODAL
+    }
+}
+
+export function closeModal() {
+    return {
+        type: CLOSE_MODAL
+    }
+}
 
 export function showPreloader() {
     return {
@@ -12,6 +33,8 @@ export function hidePreloader() {
         type: HIDE_LOADER
     }
 }
+
+
 export function fetchUser(user) {
     return async dispatch => {
         dispatch(showPreloader())
@@ -21,6 +44,18 @@ export function fetchUser(user) {
             dispatch({ type: FETCH_USERS, payload: json })
             dispatch(hidePreloader())
         }, 2000)
+
+    }
+}
+export function addSubscriber(body) {
+    return async dispatch => {
+        dispatch(showPreloader())
+        const response = await axios.post(`http://localhost:3002/addUser`, body);
+        console.log(`responseEmail`, response);
+        // setTimeout(() => {
+        //     dispatch({ type: FETCH_USERS, payload: json })
+        //     dispatch(hidePreloader())
+        // }, 2000)
 
     }
 }

@@ -9,18 +9,20 @@ import Content from './modules/Content';
 import Page from './modules/Page'
 import { Switch, Route } from 'react-router-dom';
 import AdminPage from './modules/admin';
+import { useDispatch, useSelector } from 'react-redux'
 function App() {
+  const state = useSelector(state => state);
   return (
     <div className="App">
       <Layout>
-        <Header/>
+        <Header clearState={state} />
         <Body>
           <Switch>
-          <Route exact path='/' component={Content}/>
-          <Route exact path='/content' component={Content}/>
-          <Route path='/content/tags/:category' component={Content}/>
-          <Route path='/content/:number' component={Page}/>
-          <Route path='/admin' component={AdminPage}/>
+            <Route exact path='/' component={Content} />
+            <Route exact path='/content' component={Content} />
+            <Route path='/content/tags/:category' component={Content} />
+            <Route path='/content/:number' component={Page} />
+            <Route path='/admin' component={AdminPage} />
           </Switch>
         </Body>
       </Layout>
