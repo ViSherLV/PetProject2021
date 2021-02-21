@@ -84,7 +84,7 @@ const AdminPage = (props) => {
                 <MenuItem value="">
                   <em>None</em>
                 </MenuItem>
-                <MenuItem value={'Gadgets'}>Tech</MenuItem>
+                <MenuItem value={'tech'}>Tech</MenuItem>
                 <MenuItem value={'smartphones'}>Smartphones</MenuItem>
                 <MenuItem value={'PC'}>PC</MenuItem>
                 <MenuItem value={'Tabs'}>Tabs</MenuItem>
