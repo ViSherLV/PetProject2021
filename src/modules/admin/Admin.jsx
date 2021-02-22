@@ -112,8 +112,7 @@ const AdminPage = (props) => {
 
               </div>
               <div style={styles.imageWrapper}>
-                {/* {renderPhotos(selectedImage)} */}
-                <img src={image} style={styles.image} />
+                <img src={image} style={styles.image} alt="admin logo" />
               </div>
             </div>
             <Button variant="contained"

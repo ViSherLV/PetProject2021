@@ -29,6 +29,56 @@ const styles = {
     },
     modalButton: {
         marginTop: '5px',
+    },
+    secret: {
+        position: 'absolute',
+        top: 0,
+        right: 0,
+    },
+    astr: {
+        width:700,
+        height: 600,
+        backgroundColor: 'white',
+        color: 'black',
+        position: 'absolute',
+        padding: '5px',
+        background: 'linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB)',
+    },
+    astrImage:{
+        position: 'absolute',
+        top: 0,
+        right:0,
+        marginRight: '100px',
+        marginTop: '100px',
+    },
+    astrImage2:{
+        marginTop: '250px',
+        marginLeft: '-350px',
+    },
+    sortLink:{
+        minWidth:'130px',
+        textAlign: 'left',
+        textTransform: 'uppercase',
+    },
+    resultButton:{
+        marginRight: 7
+    },
+    bubble: {
+        display: 'flex',
+        fontWeight: 'bold',
+        alignItems: 'center',
+    },
+    input: {
+        height: 20,
+        marginLeft: 5,
+        marginRight: 5,
+    },
+    review:{
+        backgroundColor: 'white',
+        width: 600,
+        height: 200,
+        marginLeft:10,
+        color:'black'
     }
 
 }

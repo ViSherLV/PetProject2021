@@ -1,15 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
-import ButtonAppBar from './modules/header/header'
-//import Body from './modules/body/body'
-import Layout from './modules/Layout';
-import Header from './modules/Layout/Header';
-import Body from './modules/Layout/Body';
-import Content from './modules/Content';
-import Page from './modules/Page'
+import Layout from './modules/layout';
+import Header from './modules/layout/Header';
+import Body from './modules/layout/Body';
+import Content from './modules/content';
+import Page from './modules/page'
 import { Switch, Route } from 'react-router-dom';
 import AdminPage from './modules/admin';
-import { useDispatch, useSelector } from 'react-redux'
+import { useSelector } from 'react-redux'
 function App() {
   const state = useSelector(state => state);
   return (

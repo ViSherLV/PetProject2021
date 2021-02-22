@@ -43,6 +43,7 @@ const styles = {
        color: '#fc0fc0',
        fontWeight: 'bold',
        display: 'flex',
+       marginTop:0,
     },
     contentText:{
         height: '100px',

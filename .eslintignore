@@ -1,0 +1,4 @@
+public
+.nyc_output
+coverage/
+client/src/assets/
