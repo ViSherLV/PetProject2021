@@ -20,6 +20,9 @@ const styles = {
         fontSize: '25px',
 
     },
+    link:{
+        textDecoration: 'none'
+    }
 
 }
 

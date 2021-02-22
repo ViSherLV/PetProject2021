@@ -7,11 +7,11 @@ const NavBar = (props)=>{
     return (
         <div style={styles.NavBarWrapper}>
             <ul style={styles.list}>
-            <Link to={`/content/tags/tech`}><li style={styles.listItem}>Technologies</li></Link>
-            <Link to={`/content/tags/smartphones`}><li style={styles.listItem}>Smartphones</li></Link>
-            <Link to={`/content/tags/PC`}><li style={styles.listItem}>PC</li></Link>
-            <Link to={`/content/tags/Tabs`}><li style={styles.listItem}>Tabs</li></Link>
-            <Link to={`/content/tags/Gadgets`}><li style={styles.listItem}>Gadgets</li></Link>
+            <Link style={styles.link} to={`/content/tags/tech`}><li style={styles.listItem}>Technologies</li></Link>
+            <Link style={styles.link} to={`/content/tags/smartphones`}><li style={styles.listItem}>Smartphones</li></Link>
+            <Link style={styles.link} to={`/content/tags/PC`}><li style={styles.listItem}>PC</li></Link>
+            <Link style={styles.link} to={`/content/tags/Tabs`}><li style={styles.listItem}>Tabs</li></Link>
+            <Link style={styles.link} to={`/content/tags/Gadgets`}><li style={styles.listItem}>Gadgets</li></Link>
             </ul>
         </div>
     )
